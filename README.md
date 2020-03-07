@@ -17,3 +17,8 @@ This repository is for practicing Web Application *Django*.
 
 - Creating `urls.py` in each app and Adding `include()` at `urlpattern[]` in `django_app/urls.py` are better.
 - Insert AppName in `INSTALLED_APPS` in `django_app_setting`
+
+## Template tags
+- {{}}
+- {% load static %}
+- {% url [NAME]%}
