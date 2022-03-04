@@ -12,6 +12,9 @@ This repository is for practicing Web Application *Django*.
 ### 1. To create new project 
 `django-admin startproject [PROJECT NAME]`
 
+### 2. To migrate 
+`python manage.py migrate`
+
 ### 2. To create new app
 `python manage.py startapp [APP NAME]`
 
