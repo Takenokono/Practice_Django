@@ -31,6 +31,15 @@ This repository is for practicing Web Application *Django*.
 - After you define DB template in `models.py`, try `python manage.py makemigrations`.
 - Then `python manage.py migrate`. 
 
+### 5. To create admin
+- `python manage.py createsuperuser`.
+- edit `[APP NAME]/admin.py` in each apps.
+- To Change the post name, write below....
+```
+def __str__(self):
+    return self.title
+```
+
 # 2022/03/04 : 23sectionまで
 
 ## Template tags

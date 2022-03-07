@@ -7,6 +7,23 @@
     <title>投稿一覧</title>
 </head>
 <body>
-    <h2>これは投稿一覧のページです。</h2>
+    <h1>ようこそ! Takenobuのブログへ！</h1>
+    <h2>最新の投稿</h2>
+
+    {% for post in posts.all %}
+        
+
+        #{{ post.id }} : 
+        <a href="{% url 'post_detail' post.id %}">{{post.title}}</a>
+        
+        <br/> <br/>
+        {{post.published}}
+        <br/> <br/>
+        <img = src="{{ post.image.url }}"/>
+        <br/> <br/>
+        {{post.summary}}
+        <br/> <br/>
+
+    {% endfor%}
 </body>
 </html>
